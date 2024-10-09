@@ -1,0 +1,14 @@
+###
+# A program that calculates the volume
+# and surface area of ​​a cuboid with sides a, b, and c.
+# Read the dimensions of the cuboid from the keyboard.
+#
+a = int
+b = int
+c = int
+a = input('enter the first dimension')
+b = input('enter the second dimension')
+c = input('enter the third dimension')
+volume = a * b * c
+surface_area = 2*a*b + 2*a*c + 2*b*c
+print(f'Volume of the cuboid is {volume} and area of the surface is {surface_area}')
