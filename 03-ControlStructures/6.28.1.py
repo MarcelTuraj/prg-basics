@@ -6,4 +6,4 @@ for i in range(0,20):
     b = a + b
     fibb += f"{a},{b},"
 
-print(fibb)
+print(f"0,1,{fibb}")
