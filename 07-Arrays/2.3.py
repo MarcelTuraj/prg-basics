@@ -49,7 +49,7 @@ for row in monthly_expenses :
     for item in row:
         total += item
 
-        
+
 # Calculates expenses
 # Use loop statements
 
