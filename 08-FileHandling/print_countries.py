@@ -2,5 +2,7 @@
 # Reads from file, line by line
 #
 with open('countries.txt', 'r') as file:
-    for line in file:
-        print(line, end="")
+    arrfile = file.readlines()
+    for i in range(0, len(arrfile)) :
+        print(f"{i+1}, {arrfile[i]}", end= "")
+    
