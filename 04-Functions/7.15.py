@@ -20,3 +20,4 @@ def n_leading_fibos(N):
     return fibostring
 
 print(n_leading_fibos(6))
+print(fibonacci(5))

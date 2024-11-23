@@ -20,11 +20,14 @@ def weekday(n):
 def day_meal_plan(meal_plan, day_number):
    meals = ""
    for item in meal_plan[day_number]:
-      meals+= f"{item},"
+      meals+= f"{item},  "
       meals = meals[:-1]
    return meals
 
 # Prints weekly meal plan
-...
-...
-...
+
+print("MEAL PLAN")
+print("=========")
+for i in range(1,7):
+   print(f"{weekday(i)} : {day_meal_plan(meal_plan, i)}")
+

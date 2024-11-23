@@ -8,8 +8,8 @@ def exponential(x,n):
     elif n < 0 :
         return 1/x**-n
     elif n > 0 :
-        return x*x**(n-1)
+        return x*(x**(n-1))
 
 x = 5
-n = 3
+n = -3
 print(f"{exponential(x,n)}")
