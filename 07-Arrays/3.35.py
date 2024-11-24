@@ -12,5 +12,8 @@ def transposition(m):
          transposed[i][k] = m[k][i]
    return transposed
 
+array = [[0]*4 for i in range(9)]
 
+
+print(array)
 print(transposition(matrix))
