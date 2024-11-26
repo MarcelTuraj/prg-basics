@@ -18,13 +18,27 @@ cards.put('Queen of Diamonds \u2666')
 cards.put('Jack of Spades \u2660')     
 
 ## prints number of elements of the stack
-print('Number of stack elements:', cards.qsize())
+
 
 # removes and prints elements from the top of the stack
-while not cards.empty():
-    card = cards.get()
-    print(card)
 
+cards.put(2)
+cards.put(3)
+cards.put(7)
+cards.put(4)
+cards.put(1)
+cards.put(9)
+cards.put(8)
+summation = 0
+for i in range(2):
+    element = cards.get()
+    summation += element
+suma = 0
+while not cards.empty():
+    element = cards.get()
+    if isinstance(element, (int,float)):
+        suma += element
+print(suma)
 """
 Note the order of the printed elements.
 The last added element is printed first.
