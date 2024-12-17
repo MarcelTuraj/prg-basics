@@ -1,0 +1,5 @@
+dist = int(input("Enter distance in km: "))
+travel_hours = int(input("Enter number of travel hours: "))
+travel_minutes = int(input("Enter number of travel minutes: "))
+avg = lambda dist,travel_hours,travel_minutes:dist/(((travel_hours*60)+travel_minutes)/60)
+print(avg(dist, travel_hours, travel_minutes))
