@@ -65,6 +65,26 @@ def transposer(matrix):
     return new_matrix
 
 
-print(transposer([[1,2,3,4,5],
-[6,7,8,9,0]]))
+def f(arr2D):
+    sums_of_cols = []
+    for i in range(len(arr2D[0])):
+        sums_of_cols.append(sum(arr2D[j][i] for j in range(len(arr2D))))
+    return sums_of_cols
 
+print(f([[3,4,2],[5,1,6]]))
+
+def whole(arr):
+    whole = []
+
+    for i in range(len(arr[0])):
+        col = []
+        for j in range(len(arr)):
+            col.append((arr[j][i]))
+        whole.append(col)
+    return whole
+
+print(whole([[3,4,2],[5,1,6]]))
+
+
+
+    
