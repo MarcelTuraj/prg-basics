@@ -11,7 +11,18 @@ def function2(text):
                 text[j],text[j+1] = text[j+1],text[j]
     return text
 
-print(function2(text))
+def function3(text):
+    text = text.split()
+    for i in range(0,len(text)):
+        for j in range(0,len(text)-i-1):
+            if text[j] > text[j+1]:
+                text[j], text[j+1] = text[j+1], text[j]
+    return text
+            
+
+        
+
+print(function3(text))
 
 
         
