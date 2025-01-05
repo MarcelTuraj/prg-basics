@@ -8,4 +8,4 @@ def f(x,y,digit):
             counter += item.count(str(digit))
     return counter
 
-print(f(100,105,6))
+print(f(100,101,0))

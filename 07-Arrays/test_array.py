@@ -71,7 +71,6 @@ def f(arr2D):
         sums_of_cols.append(sum(arr2D[j][i] for j in range(len(arr2D))))
     return sums_of_cols
 
-print(f([[3,4,2],[5,1,6]]))
 
 def whole(arr):
     whole = []
@@ -83,8 +82,17 @@ def whole(arr):
         whole.append(col)
     return whole
 
-print(whole([[3,4,2],[5,1,6]]))
 
 
+def min_of_cols(arr):
+    mins = []
+    for i in range(len(arr[0])):
+        mins.append(min(arr[j][i] for j in range(len(arr))))
+        
+
+    return mins
+
+
+print(min_of_cols([[3,4,2],[5,1,6]]))
 
     

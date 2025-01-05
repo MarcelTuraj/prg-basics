@@ -16,7 +16,7 @@ def f(subject):
 
 
 dict = {"comp":[1,2,3],
-        "wf":[2,4,5],
+        "wf":[123,4,5],
         "przyroda":[0,0,0],
         "tpi":[5,5,5]}
 

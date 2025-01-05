@@ -6,5 +6,3 @@ def f(x,y,d):
         return True
     return False
 
-print(f(205,210,"04"))
-
