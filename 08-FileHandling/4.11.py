@@ -5,5 +5,4 @@ with open("powers.csv", "w") as file:
     for i in range(1,101):
         writer.writerow({'number':i,'second_power':i**2,'third_power':i**3})
 
-        
 

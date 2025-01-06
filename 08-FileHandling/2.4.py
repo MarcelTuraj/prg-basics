@@ -15,3 +15,4 @@ with open(employees_file) as file1:
       for line in file1:
          if job_title in line:
             file2.write(line)
+

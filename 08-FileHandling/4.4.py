@@ -6,20 +6,18 @@ def read_from_file(name):
 file_content = read_from_file('it_company.csv')
 file_lines = file_content.splitlines()
 
-for i in range(1,6):
-   print(file_lines[i])
 
 
 
 
-counter = 6
+counter = 0
 while counter < len(file_lines):
    user_input = input("Enter key if continue: ")
-   if user_input == "":
+   if user_input == "" and counter + 5 < len(file_lines):
       for i in range(counter,counter+5):
          print(file_lines[i])
    counter = counter + 5
-
+   
 
 
     
